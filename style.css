@@ -177,11 +177,24 @@
 .project-card {
     background-color: white;
     padding: 1.5rem;
-    border-radius: 12px;
-    border-left: 6px solid #f0b429;
+    border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: grid;
+    grid-template-rows: auto 1fr auto;
     gap: 0.5rem;
+    position: relative;
+    overflow: hidden;
+}
+.project-card::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 100%;
+    background-color: #f0b429;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
 .project-card h4 {
     font-size: 1.1rem;
@@ -192,6 +205,25 @@
     line-height: 1.4;
     font-size: 0.9rem;
 }
+.project-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+.project-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.project-actions svg {
+    width: 22px;
+    height: 22px;
+}
+.project-actions button:hover svg {
+    opacity: 0.65;
+}
+
 .main-sidebar {
     display: grid;
     gap: 2rem;
