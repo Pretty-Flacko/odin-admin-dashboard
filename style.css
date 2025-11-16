@@ -39,6 +39,7 @@ svg {
 .header-top-left form {
     display: flex;
     align-items: center;
+    width: 100%;
     gap: 0.75rem;
 }
 .header-top-left button {
@@ -58,7 +59,7 @@ svg {
     border: none;
     border-radius: 20px;
     padding: 0.4rem 1rem;
-    width: 350px;
+    flex: 1;
     font-size: 1rem;
     outline: none;
     transition: background-color 0.3s;
@@ -70,7 +71,20 @@ svg {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 1rem;
+    gap: 1.5rem;
+}
+.header-top-right svg {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+.header-top-right img {
+    width: 45px;
+    height: 45px;
+}
+.header-top-right p {
+    font-size: 1rem;
+    font-weight: 600;
 }
 .header-bottom-left {
     display: flex;
