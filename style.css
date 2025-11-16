@@ -88,6 +88,20 @@ svg {
 }
 .header-bottom-left {
     display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+.header-bottom-left img {
+    width: 60px;
+    height: 60px;
+}
+.header-bottom-left p {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.header-bottom-left h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
 }
 .header-bottom-right {
     display: flex;
