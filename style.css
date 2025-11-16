@@ -116,7 +116,7 @@
     padding: 2rem;
     display: grid;
     grid-template-rows: auto auto 1fr;
-    gap: 2rem;
+    gap: 3rem;
     background-color: #1992d4;
     color: white;
 }
@@ -159,7 +159,7 @@
 
 .main-content {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     gap: 2rem;
     padding: 2rem;
     background-color: #e2e8f0;
@@ -168,6 +168,12 @@
     font-size: 1.3rem;
     font-weight: 600;
     margin-bottom: 1rem;
+}
+.projects,
+.announcements,
+.trending {
+    display: grid;
+    grid-template-rows: auto 1fr;
 }
 .projects-grid {
     display: grid;
