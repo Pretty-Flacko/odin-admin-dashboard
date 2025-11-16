@@ -72,6 +72,7 @@ svg {
     align-items: center;
     justify-content: flex-end;
     gap: 1.5rem;
+    padding-right: 1rem;
 }
 .header-top-right svg {
     width: 24px;
@@ -105,9 +106,23 @@ svg {
 }
 .header-bottom-right {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: flex-end;
     gap: 1rem;
+}
+.header-bottom-right button {
+    background-color: #1992d4;
+    color: white;
+    padding: 0.6rem 1.4rem;
+    border: none;
+    border-radius: 24px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.header-bottom-right button:hover {
+    background-color: #53a1ca;
 }
 
 .sidebar {
