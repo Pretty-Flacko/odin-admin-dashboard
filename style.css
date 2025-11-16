@@ -17,6 +17,9 @@
     grid-template-columns: 2fr 1fr;
     gap: 1rem;
     padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
 }
 .header-top-left {
     display: flex;
@@ -241,6 +244,7 @@
     display: grid;
     grid-template-rows: repeat(5, auto);
     gap: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .announcements h4 {
     font-size: 0.9rem;
@@ -264,6 +268,7 @@
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     gap: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .trending-item {
     display: flex;
